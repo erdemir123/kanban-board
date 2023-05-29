@@ -110,7 +110,7 @@ function CardInfo(props: CardInfoProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cardValues]);
 
-  const calculatedPercent = calculatePercent();
+  const calculatedPercent =  calculatePercent();
 
   return (
     <Modal onClose={onClose}>
