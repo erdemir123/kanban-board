@@ -1,20 +1,19 @@
 .board {
     min-width: 290px;
-    width: 290px;
+    width: 320px;
     height: 100%;
     overflow-y: auto;
     flex-basis: 290px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
-    
-    color: #17394d;
+    color: #17394d;    
   }
   .board-inner{
     background-color: rgb(223 227 230 / 55%);
     padding: 15px;
     border-radius: 3px;
+    
   }
   .board-header {
     display: flex;
@@ -25,13 +24,17 @@
   
   .board-header-title {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    color:#fff;
     display: flex;
     gap: 5px;
     align-items: center;
+    
+    
   }
   
   .board-header-title span {
+    margin-left:5px;
     color: rgb(145, 145, 145);
   }
   
@@ -57,8 +60,8 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    justify-content:center;
     gap: 10px;
-    overflow-y: auto;
   }
   
   .board-add-card {
@@ -66,8 +69,9 @@
     color: #000;
     border-radius: 10px;
     box-shadow: 1px 1px 0 1px rgba(0, 0, 0, 0.12);
-    width: 100%;
+    width: 90%;
     text-align: center;
+    
   }
   .board-add-card-edit {
     background-color: #fff;

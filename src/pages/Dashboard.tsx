@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./DashBoard.css";
 import { IBoard, ICard } from "../interfaces/kanban";
-import { fetchBoardList, updateLocalStorageBoards } from "../Helper/ApiLayers";
+
 import Board from "../components/board/Board";
+import CustomInput from "../components/customInput/CustomInput";
+import { fetchBoardList, updateLocalStorageBoards } from "../Helper/ApiLayers";
 
 const Dashboard = () => {
   const [boards, setBoards] = useState<IBoard[]>([]);
@@ -104,7 +106,7 @@ const Dashboard = () => {
     if (targetCardIndex < 0) return;
 
     const tempBoardsList = [...boards];
-    
+
     const sourceCard = tempBoardsList[sourceBoardIndex].cards[sourceCardIndex];
     tempBoardsList[sourceBoardIndex].cards.splice(sourceCardIndex, 1);
     tempBoardsList[targetBoardIndex].cards.splice(
@@ -151,14 +153,14 @@ const Dashboard = () => {
             />
           ))}
           <div className="app-boards-last">
-            {/* <CustomInput
-          displayClass="app-boards-add-board"
-          editClass="app-boards-add-board-edit"
-          placeholder="Enter Board Name"
-          text="Add Board"
-          buttonText="Add Board"
-          onSubmit={addboardHandler}
-        /> */}
+            <CustomInput
+              displayClass="app-boards-add-board"
+              editClass="app-boards-add-board-edit"
+              placeholder="Enter Board Name"
+              text="Add Board"
+              buttonText="Add Board"
+              onSubmit={addboardHandler}
+            />
           </div>
         </div>
       </div>

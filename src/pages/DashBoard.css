@@ -1,6 +1,6 @@
 body {
-  height: 100vh;
-  width: 100%;
+  /* height: 100vh;
+  width: 100%; */
   background-image: url("C:\Users\sadik\OneDrive\Masaüstü\kanban-board\src\asserts\images\kanbanBackground.jpeg");
   /* background-size: 60%; */
   background-size: cover;
@@ -25,9 +25,8 @@ body {
   color: #fff;
   display: inline-block;
   font-size: 15px;
-  margin-left: 15px;
+  margin:0 auto;
   line-height: 36px;
-  margin-right: 8px;
   padding: 0;
 }
 
@@ -58,8 +57,8 @@ body {
   color: #000;
   border-radius: 10px;
   box-shadow: 1px 1px 0 1px rgba(0, 0, 0, 0.12);
-  width: 100%;
   text-align: center;
+
 }
 .app-boards-add-board-edit {
   background-color: #fff;
