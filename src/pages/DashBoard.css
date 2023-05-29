@@ -1,8 +1,7 @@
 body {
   /* height: 100vh;
   width: 100%; */
-  background-image: url("C:\Users\sadik\OneDrive\Masaüstü\kanban-board\src\asserts\images\kanbanBackground.jpeg");
-  /* background-size: 60%; */
+  background-color:orangered;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
